@@ -144,12 +144,20 @@ wins.
 - 【现象】：前端验收无限循环多轮截图，反复输出高度相似截图进行打磨
   - 【触发条件】：前端界面改动、界面验收打磨环节
   - 【规避做法】：执行高效截图打磨验收，避免无意义连续重复截图
+  - 【记录时间】：2026-11
 
 ## 本项目私有 Gotchas（仅本项目生效）
 > 记录本项目独有的踩坑、业务特殊约束、偶然环境问题；本部分仅当前项目生效，新建其他项目不会继承此章节内的内容。
 ```
 
 注意：私有区初始是空的，只有会话收尾遇到坑才会往里追加条目。
+
+**条目治理（写坑时强制执行）：**
+
+- 单项目私有区控制在 **8–10 条以内**；满额时先合并同类、删除已修复或条件失效的条目，再写新条目。
+- 每条都带【记录时间】`YYYY-MM`；被复现或复核时更新时间，长期未复现的条目在收尾时评估删除。
+- 写通用条目前先检索是否已有同类，有则改写原条目而非追加；已不适用的旧条目同步删除。
+- 语义重复、写不出可执行规避做法的条目不保留。
 
 For updates, the existing target is the base. Add missing project information
 and relevant baseline clauses verbatim where useful, avoiding duplication and
@@ -181,7 +189,9 @@ Inspect the final document and diff:
   copied into the target file. The 通用高频 Gotchas section is imported verbatim
   from that reference; 本项目私有 Gotchas exists as an empty placeholder whose
   body matches the reference wording; and no entry from any other project's
-  private Gotchas section was carried in.
+  private Gotchas section was carried in. Every Gotchas entry carries a
+  【记录时间】`YYYY-MM` line, and the private section stays within the 8–10
+  entry cap.
 - No placeholders, secrets, invented checks, duplicate sections, or unnecessary
   setup remain. If nothing material changed, leave the file untouched; do not
   add timestamps or reformat just to manufacture an update.
