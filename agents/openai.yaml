@@ -1,0 +1,4 @@
+interface:
+  display_name: "AGENTS.md Init"
+  short_description: "Create project-aware AGENTS.md with focused questions"
+  default_prompt: "Use $agents-md-init to inspect this project, ask about unresolved decisions and preferences, and create or update AGENTS.md."
